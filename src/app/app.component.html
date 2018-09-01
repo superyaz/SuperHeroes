@@ -1,0 +1,26 @@
+<div id="wrapper" class="animate">
+    <nav class="navbar header-top fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <span class="navbar-toggler-icon leftmenutrigger"></span>
+        <a class="navbar-brand" href="http://localhost:4200/">SuperHeroes</a>
+        <a class="navbar-brand" href="https://www.marvel.com/">Marvel Studio</a>
+        <a class="navbar-brand" href="https://chefcompany.co/">Chef Company® </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav animate side-nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="" href="#" title="Dashboard"><i style="font-size: 40px" class="fa fa-users"></i>Personajes<i style="font-size: 30px" class="fa fa-users shortmenu animate"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="ranking" href="#" title="Cart"><i style="font-size: 40px" class="fa fa-user-secret"></i>Top mejores <i style="font-size: 30px" class="fa fa-user-secret shortmenu animate"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <!--Esta línea de comando me permite la comunicación con los rutas de los componentes-->
+        <router-outlet></router-outlet>
+    </div>
+</div>
