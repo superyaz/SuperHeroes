@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-12">
+            <div id="rankingHeroes" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-2" *ngFor="let item of primeros_cinco">
+                                <div class="card">
+                                    <div class="img">
+                                        <img [src]="item.picture">
+                                    </div>
+                                    <h2 class="item-name">{{item.name}}</h2>
+                                    <p class="item-info">{{item.info}}</p>
+                                    <span class="item-meGusta">
+                                        <ul>
+                                            <li><a style="cursor:pointer" >{{item.megusta}}</a></li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-2" *ngFor="let item of segundo_cinco">
+                                <div class="card">
+                                    <div class="img">
+                                        <img [src]="item.picture">
+                                    </div>
+                                    <h2 class="item-name">{{item.name}}</h2>
+                                    <p class="item-info">{{item.info}}</p>
+                                    <span class="item-meGusta">
+                                        <ul>
+                                            <li><a style="cursor:pointer" >{{item.megusta}}</a></li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#rankingHeroes" role="button" data-slide="prev">
+                    <span class="sr-only">Atras</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#rankingHeroes" role="button" data-slide="next">
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

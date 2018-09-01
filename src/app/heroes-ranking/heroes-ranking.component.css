@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #fbfbfb;
+}
+
+.card {
+    width: 110%;
+    height: 450px;
+    background: #343a40;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    transition: 0.5s;
+    margin: 100px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 30px 70px rgba(0, 0, 0, .2);
+}
+
+.card .img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .item-name {
+    height: 25px;
+    font-size: 20px;
+    color: #FFF;
+    margin: 20px auto;
+}
+
+.card .item-info {
+    height: 160px;
+    color: #FFF;
+}
+
+.card .item-publisher {
+    height: 25px;
+    color: #ff8d00;
+    font-weight: 600;
+}
+
+.card .item-meGusta {
+    display: inline-flex;
+    height: 30px;
+    justify-content: center;
+}
+
+.card .item-meGusta ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card .item-meGusta ul li {
+    list-style: none;
+    float: left;
+}
+
+.card .item-meGusta ul li a {
+    display: block;
+    color: #aaa;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    text-align: end;
+}
